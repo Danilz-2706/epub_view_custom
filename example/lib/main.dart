@@ -96,6 +96,9 @@ class _MyHomePageState extends State<MyHomePage> {
         await InternetFile.get(
           // 'https://firebasestorage.googleapis.com/v0/b/freetrip-dev.appspot.com/o/Biet%20Thu%20Cua%20Nguoi%20Da%20Khuat%20-%20_638647769440306850.epub?alt=media&token=3f65e39d-e16e-4d12-a808-ada0f9a35597',
           'https://firebasestorage.googleapis.com/v0/b/freetrip-dev.appspot.com/o/New-Findings-on-Shirdi-Sai-Baba.epub?alt=media&token=b4f1e3c8-1cac-4c1f-a2bd-cd77c8670473',
+          // Uri.parse(
+          //         'https://file.freetrip.vn/upload/EBook/1/Lang Diec - Linh Bao_638663159280257049.epub')
+          //     .toString(),
         ),
       ),
     );
@@ -126,10 +129,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ? EpubView(
                 builders: EpubViewBuilders<DefaultBuilderOptions>(
                   options: const DefaultBuilderOptions(
-                    textStyle: TextStyle(
-                      color: Colors.blue,
-                    ),
-                  ),
+                      // textStyle: TextStyle(
+                      //   color: Colors.blue,
+                      // ),
+                      ),
                   chapterDividerBuilder: (_) => const Divider(),
                 ),
                 controller: _epubReaderController!,

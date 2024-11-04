@@ -47,7 +47,8 @@ ParseParagraphsResult parseParagraphs(
         final document = EpubCfiReader().chapterDocument(next);
         if (document != null) {
           final result = convertDocumentToElements(document);
-          elmList = _removeAllDiv(result);
+          // elmList = _removeAllDiv(result);
+          elmList = result;
         }
       }
 
